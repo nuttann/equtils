@@ -93,7 +93,7 @@ collectstoweb -conf PATH-TO-CONFIG-FILE
 
 Example:
 
-collectiontohtml -conf /Users/Nuttann/Eq/conf/collections_conf.yml
+collectstoweb -conf /Users/Nuttann/Eq/conf/collections_conf.yml
 
 As usual, use quotes where necessary if the paths used have spaces.  You can
 also set up a desktop shortcut to do this. If you use a shortcut, set it so

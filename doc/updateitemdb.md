@@ -14,7 +14,7 @@
 ## 1. Overview
 
 The "updateitemdb" command is capable of reading in certain types of EQ data
-sources to update the item DB. This item DB is used by the "collectiontohtml" program to display quest item names that are not in a house.
+sources to update the item DB. This item DB is used by the "collectstoweb" program to display quest item names that are not in a house.
 
 - Inventory files produced with "/output inventory" from within EQ.
 - Real-estate files produced with "/output realestate" from within EQ.
