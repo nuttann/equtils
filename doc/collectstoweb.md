@@ -71,10 +71,7 @@ Some limitations here are due to just meeting my use case.
   code and it was easy enough to have alts get more houses.
 - The current code only mentions if extra items were stored in a house. It
   doesn't state whether they are collection items, and if so, in which house
-  they should have been.  There was an older Python program that went through
-  my inventory dump and found collection items and would print out where they
-  were in my bags and in which house they should be placed. I may get around to
-  reimplementing that.
+  they should have been.
 - Names that have not been collected for items show up as "???" for their name.
   Items that are in the houses will have a name along with those that have been
   seen previously or have been collected with the
@@ -209,16 +206,24 @@ houses:
 ## 6. Future enhancements
 
 Many of the limitations were due to just meeting my personal needs. There are
-some things that could be done to make this more useful.
+some things that could be done to make this more useful. Requests for any of
+these or other features may motivate me to work on them.
 
 Possible future work:
 
+- Report when a configured house does not appear in the configured real-estate dump.
 - Report whether stored items in a house that don't belong to the configured
   quests to that house are colection items or not.
 - If a collection item is in a wrong house, report which house it should be in.
 - Add feature to search bags for collection items and list which house they
   should should be place in. (An older Python program I wrote used to do this
   for me and it made it quicker to drop items into the proper house.)
+- Possibly add a configuration item to omit certain reports such as extra
+  non-collection items stored in a house. (I used separate houses for such
+  items and needed the slots so that I could hold a stack of each collection
+  item configured for a house.)
+- Add a configuration item to send output messages to a log file instead of the
+  terminal.
 
 ## 7. Downloading and installation
 
