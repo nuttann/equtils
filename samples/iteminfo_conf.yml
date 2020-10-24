@@ -1,0 +1,23 @@
+# Sample configuration for the "updateitemdb" command.
+
+# 'itemdbloc' points to the location for reading and writing.
+# (Currently file name)
+itemdbloc: /Users/Nuttann/Eq/eqdata/itemdb.yml
+
+# Realstate files to process ("/output realestate")
+realestate:
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/Nuttann_cazic-RealEstate.txt"
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/Gallin_cazic-RealEstate.txt"
+
+# Inventory files to process ("/output inventory")
+inventories:
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/Nuttann_cazic-Inventory.txt"
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/Gallin_cazic-Inventory.txt"
+
+# Loot filter files to process. Icon IDs will be used from these. Names will
+# only be used if there is no current name of the item.
+lootfilters:
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/userdata/LF_AG_Nuttann_cazic.ini"
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/userdata/LF_AN_Nuttann_cazic.ini"
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/userdata/LF_Nvr_Nuttann_cazic.ini"
+  - "/Users/Public/Daybreak Game Company/Installed Games/EverQuest/userdata/LF_Rnd_Nuttann_cazic.ini"

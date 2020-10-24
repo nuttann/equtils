@@ -1,0 +1,65 @@
+# Sample configuraiton file for the "collectstoweb" command.
+
+# 'questsfile' points to the file containing all the quest info. 
+questsfile: /Users/Nuttann/Eq/eqdata/collection_quests.yml
+
+# 'itemdbloc' (Item Database Loc) points to the DB location for reading and
+# writing. (The current code supports a YAML file for the database.)
+itemdbloc: /Users/Nuttann/Eq/eqdata/itemdb.yml
+
+# 'htmlout' points to where the output should be written.
+htmlout: "/Users/Nuttann/Eq/output/collection.html"
+
+# 'htmltitle' will be used in the HTML as both the document title and the
+# overall document header. This will be escaped for HTML so using text such as
+# an '&' should appear verbatim in the output.
+htmltitle: "EQ Collection Items"
+
+# 'htmlintro' data will be inserted betwwen the title and the inventory
+# listing. This is treated as raw HTML so external links to other docs such as
+# detailed instructions can be added. Any HTML tokens that must appear directly
+# in the final intro must be escaped here.
+htmlintro: 'Contact Nuttann via in-game email if you want some items from these
+houses.  <b>Each mail should list the house address (E.g., which house) along
+with up to 10 items to be retrieved from that house.</b> You can send multiple
+emails at the same time. Reasons for this are to make it quicker to handle, not
+require a ton of bag space to fill an order, and to be able to rotate among
+various users with requests to be fair.'
+
+# 'houses' lists the houses and the contents for each house. If no "zones" field
+# is present for an expansion, then all appropriate zones for that expansion are
+# used. Zones are only needed if only part of the expansion is stored in a
+# house. (E.g., In the example below, Rain of Fear is split between two houses
+# and Periodic fits in the remainder of the second house and Call of the
+# Forsaken is in a house by itself.)
+houses:
+  - fname: "/Users/Public/Daybreak Game Company/Installed Games/Everquest/Nuttann_cazic-RealEstate.txt"
+    address: "Return of the Exiled Village II, 113 Vanward Street, Bixie Hive House"
+    expansions:
+      - name: Rain of Fear
+        zones:
+          - Multi-zone
+          - Shard's Landing
+          - East Wastes, Zeixshi-Kar's Awakening
+          - Kael Drakkel, The King's Madness
+          - Crystal Caverns, Fragment of Fear
+          - Evantil, the Vile Oak
+          - Breeding Grounds
+          - Chapterhouse of the Fallen
+          - Grelleth's Palace, Chateau of Filth
+
+  - fname: "/Users/Public/Daybreak Game Company/Installed Games/Everquest/Nuttann_cazic-RealEstate.txt"
+    address: "Return of the Exiled Village II, 111 Vanward Street, Evantil's Abode"
+    expansions:
+      - name: Rain of Fear
+        zones:
+          - Valley of King Xorbb
+          - Chelsith Reborn
+          - Plane of Shadow
+          - Heart of Fear
+      - name: Periodic
+
+  - fname: "/Users/Public/Daybreak Game Company/Installed Games/Everquest/Gallin_cazic-RealEstate.txt"
+    address: "Return of the Exiled Village II, 112 Vanward Street, Bixie Hive House"
+    expansions:
+      - name: Call of the Forsaken
