@@ -14,7 +14,10 @@
 ## 1. Overview
 
 The "updateitemdb" command is capable of reading in certain types of EQ data
-sources to update the item DB. This item DB is used by the "collectstoweb" program to display quest item names that are not in a house.
+sources to update the item DB. This item DB is used by the "collectstoweb"
+program to display quest item names that are not currently in a house. There
+were also plans to make a loot-file management aid that could also use this
+information.
 
 - Inventory files produced with "/output inventory" from within EQ.
 - Real-estate files produced with "/output realestate" from within EQ.
@@ -48,7 +51,10 @@ Loot-filter files were taken with a grain of salt.
 ## 4. Usage
 
 The usage is very simple once the [configuration](#configuration-file-format)
-is set up properly.
+is set up properly. This is best used with recent inventory and real-estate
+files. Old ones may contain old names for items. To get current ones,
+type "/output realestate" and "/output inventory" in an EQ window of
+each character that has items to collect information about.
 
 The program has a "conf" argument that must be present and point to the
 configuration file to use. If the program is installed in your PATH, the
@@ -76,7 +82,8 @@ description is given here.
 This "Item Database Location" should point to the location of the database. The
 current code only supports a YAML file as the database. The amount of data is
 small enough that the YAML version works fine. See [Downloading and
-Installation](./downloading.md) for more information this file.
+Installation](./downloading.md) for more information about obtaining a
+version of this file.
 
 ### 5.2. realestate
 
@@ -94,9 +101,13 @@ in the EQ install directory with names that follow the pattern
 
 ### 5.4. lootfilters
 
-This parameter is a list of paths/filenames to the various loot-filter files. These are files
-that are updated when using the loot-filter UI and setting or removing a persistent setting (I.e., "Nvr" - Never loot, "AN" - Always Need, "AG" - Always Greed, and "Rnd" - Random). The
-names are currently placed in the "userdata" folder of the EQ install directory and whose names are formatted like "LF_TYPE_CHARACTER_SERVER.ini" (E.g.,LF_AG_Nuttann_cazic.ini). TYPE is the persistent setting type mentioned above.
+This parameter is a list of paths/filenames to the various loot-filter files.
+These are files that are updated when using the loot-filter UI and setting or
+removing a persistent setting (I.e., "Nvr" - Never loot, "AN" - Always Need,
+"AG" - Always Greed, and "Rnd" - Random). The names are currently placed in the
+"userdata" folder of the EQ install directory and whose names are formatted like
+"LF_TYPE_CHARACTER_SERVER.ini" (E.g.,LF_AG_Nuttann_cazic.ini). TYPE is the
+persistent setting type mentioned above.
 
 ## 6. Downloading and installation
 

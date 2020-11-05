@@ -211,17 +211,18 @@ these or other features may motivate me to work on them.
 
 Possible future work:
 
-- Report when a configured house does not appear in the configured real-estate dump.
+- Report when a configured house does not appear in the configured real-estate
+  dump. This should help detect mismatched names.
 - Report whether stored items in a house that don't belong to the configured
   quests to that house are colection items or not.
 - If a collection item is in a wrong house, report which house it should be in.
 - Add feature to search bags for collection items and list which house they
-  should should be place in. (An older Python program I wrote used to do this
+  should should be placed in. (An older Python program I wrote used to do this
   for me and it made it quicker to drop items into the proper house.)
 - Possibly add a configuration item to omit certain reports such as extra
-  non-collection items stored in a house. (I used separate houses for such
-  items and needed the slots so that I could hold a stack of each collection
-  item configured for a house.)
+  non-collection items stored in a house. (The houses that I used for
+  collections only contained collection items as I was reserving space for one
+  stack per item. I used separate houses for non-collection items.)
 - Add a configuration item to send output messages to a log file instead of the
   terminal.
 
