@@ -22,9 +22,8 @@ htmltitle: "EQ Collection Items"
 htmlintro: 'Contact Nuttann via in-game email if you want some items from these
 houses.  <b>Each mail should list the house address (E.g., which house) along
 with up to 10 items to be retrieved from that house.</b> You can send multiple
-emails at the same time. Reasons for this are to make it quicker to handle, not
-require a ton of bag space to fill an order, and to be able to rotate among
-various users with requests to be fair.'
+emails at the same time. See <a href="./request-instructions.html">Request Info
+</a> for more information, a sample, and reasons why the info saves me time.
 
 # 'houses' lists the houses and the contents for each house. If no "zones" field
 # is present for an expansion, then all appropriate zones for that expansion are
