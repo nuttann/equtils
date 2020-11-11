@@ -12,7 +12,8 @@
   - [5.5. htmlintro](#55-htmlintro)
   - [5.6. houses](#56-houses)
 - [6. Future enhancements](#6-future-enhancements)
-- [7. Downloading and installation](#7-downloading-and-installation)
+- [7. Adding new quests](#7-adding-new-quests)
+- [8. Downloading and installation](#8-downloading-and-installation)
 
 ## 1. Overview
 
@@ -215,6 +216,8 @@ Possible future work:
   dump. This should help detect mismatched names.
 - Report whether stored items in a house that don't belong to the configured
   quests to that house are colection items or not.
+- Allow substring of address to be used.  Some currently include house type.  
+  If this is added, try and report if this matches multiple houses in a file.
 - If a collection item is in a wrong house, report which house it should be in.
 - Add feature to search bags for collection items and list which house they
   should should be placed in. (An older Python program I wrote used to do this
@@ -226,6 +229,12 @@ Possible future work:
 - Add a configuration item to send output messages to a log file instead of the
   terminal.
 
-## 7. Downloading and installation
+## 7. Adding new quests
+
+Start with the eqdata repository. The README file in the
+[eqdata](https://github.com/nuttann/eqdata) repository explains the format and how
+to enter new data for the collection_quests.yml file.
+
+## 8. Downloading and installation
 
 See the [Downloading and Installation](./downloading.md) document for instructions.
