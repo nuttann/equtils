@@ -40,7 +40,13 @@ can be obtained using "git" or as a "zip" snapshot.
 ### 3.1. Download pre-compiled binary
 
 1) Visit the GitHub repo at "https://github.com/nuttann/equtils".
-2) Download TODO
+2) Click on a release (usually latest) on the right side of the page.
+3) Right click on the binary that you want and save to your system. (Chrome gave
+   me a warning that it wasn't commonly downloaded so may be dangerous. I doubt
+   it will get downloaded enough to ever commonly downloaded. There is always
+   the source version below if you want to look at the source or compile from
+   source.)
+4) Place someplace so that you can run it once you have set up the proper configuration files and obtained the [Supporting Data Files](#2-downloading-supporting-data-files).
 
 ### 3.2. Download source code
 
